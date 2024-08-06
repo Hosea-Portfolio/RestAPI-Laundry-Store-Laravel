@@ -1,64 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+### **Introduction**
+This is a dummy project based on the analysis of the laundry system in Indonesia. This project was built using Laravel 8 and MySQL. This project also provides dummy data using Laravel features called "Factory" and "Faker", so if necessary, follow the steps to install/run the project locally. 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### **Schema Database**
+![image](https://github.com/user-attachments/assets/cdc25450-1e33-490d-a322-04e470f8fd26)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### **Features**
+`GET` - Requests to retrieve the information from the module
+`POST` - Create a data based on request
+`PATCH` - Update a data
+`DELETE` - Delete the data 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### **How to Install/Run the Project in Local**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. Clone the Project
+```bash
+git clone https://github.com/Hosea-Portfolio/RestAPI-Laundry-Store-Laravel
+cd Hosea-Portfolio/RestAPI-Laundry-Store-Laravel
+```
+2. Composer Update/Composer Install
+3. Copy .env.example and change the name of file to .env
+4. Generate key
+```bash
+php artisan key:generate
+```
+5. Change the DB information based on your device setting
+6. Add additional code faker (If necessary)
+```bash
+FAKER_LOCALE=id_ID
+```
+7. Do seed the database
+```bash
+php artisan db:seed
+php artisan migrate --seed OR php artisan migrate:fresh --seed
+```
+8. The project is ready in your local
+```bash
+php artisan serve
+```
 
-## Learning Laravel
+### **List Endpoint API**
+<h3>Endpoint Customer</h3>
+<ul>
+    <li>Fetch Customer Data : http://127.0.0.1:8000/api/customer</li>
+    <li>Show Customer Data Based on ID : http://127.0.0.1:8000/api/customer/:id</li>
+    <li>Create a Customer Data : http://127.0.0.1:8000/api/customer</li>
+    <li>Update a Customer Data : http://127.0.0.1:8000/api/customer/:id</li>
+    <li>Delete a Customer Data: http://127.0.0.1:8000/api/customer/:id </li> 
+</ul>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h3>Endpoint Payment Status</h3>
+<ul>
+    <li>Fetch Payment Status Data : http://127.0.0.1:8000/api/payment-status</li>
+    <li>Show Payment Status Data Based on ID : http://127.0.0.1:8000/api/payment-status/:id</li>
+    <li>Create a Payment Status Data : http://127.0.0.1:8000/api/payment-status</li>
+    <li>Update a Payment Status Data : http://127.0.0.1:8000/api/payment-status/:id</li>
+    <li>Delete a Payment Status Data: http://127.0.0.1:8000/api/payment-status/:id </li> 
+</ul>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+<h3>Endpoint Payment Type</h3>
+<ul>
+    <li>Fetch Payment Type Data : http://127.0.0.1:8000/api/payment-type</li>
+    <li>Show Payment Type Data Based on ID : http://127.0.0.1:8000/api/payment-type/:id</li>
+    <li>Create a Payment Type Data : http://127.0.0.1:8000/api/payment-type</li>
+    <li>Update a Payment Type Data : http://127.0.0.1:8000/api/payment-type/:id</li>
+    <li>Delete a Payment Type Data: http://127.0.0.1:8000/api/payment-type/:id </li> 
+</ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<h3>Endpoint Laundry Type</h3>
+<ul>
+    <li>Fetch Laundry Type Data : http://127.0.0.1:8000/api/laundry-type</li>
+    <li>Show Laundry Type Data Based on ID : http://127.0.0.1:8000/api/laundry-type/:id</li>
+    <li>Create a Laundry Type Data : http://127.0.0.1:8000/api/laundry-type</li>
+    <li>Update a Laundry Type Data : http://127.0.0.1:8000/api/laundry-type/:id</li>
+    <li>Delete a Laundry Type Data: http://127.0.0.1:8000/api/laundry-type/:id </li> 
+</ul>
 
-### Premium Partners
+h3>Endpoint Transaction</h3>
+<ul>
+    <li>Fetch Transaction Data : http://127.0.0.1:8000/api/transaction</li>
+    <li>Show Transaction Data Based on ID : http://127.0.0.1:8000/api/transaction/:id</li>
+    <li>Create a Transaction Data : http://127.0.0.1:8000/api/transaction</li>
+    <li>Update a Transaction Data : http://127.0.0.1:8000/api/transaction/:id</li>
+    <li>Delete a Transaction Data: http://127.0.0.1:8000/api/transaction/:id </li> 
+</ul>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
