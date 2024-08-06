@@ -2,14 +2,14 @@
 This is a dummy project based on the analysis of the laundry system in Indonesia. This project was built using Laravel 8 and MySQL. This project also provides dummy data using Laravel features called "Factory" and "Faker", so if necessary, follow the steps to install/run the project locally. 
 
 ### **Schema Database**
-![image](https://github.com/user-attachments/assets/cdc25450-1e33-490d-a322-04e470f8fd26)
+![image](https://github.com/user-attachments/assets/b99e5c5f-5550-4dd0-a8e6-eadb4aeb3ba6)
 
 
 ### **Features**
-`GET` - Requests to retrieve the information from the module
-`POST` - Create a data based on request
-`PATCH` - Update a data
-`DELETE` - Delete the data 
+`GET` - Requests to retrieve the information from the module</br>
+`POST` - Create a data based on request</br>
+`PATCH` - Update a data</br>
+`DELETE` - Delete the data </br>
 
 ### **How to Install/Run the Project in Local**
 
