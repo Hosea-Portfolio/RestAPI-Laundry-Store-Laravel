@@ -77,7 +77,7 @@ php artisan serve
     <li>Delete a Laundry Type Data: http://127.0.0.1:8000/api/laundry-type/:id </li> 
 </ul>
 
-h3>Endpoint Transaction</h3>
+<h3>Endpoint Transaction</h3>
 <ul>
     <li>Fetch Transaction Data : http://127.0.0.1:8000/api/transaction</li>
     <li>Show Transaction Data Based on ID : http://127.0.0.1:8000/api/transaction/:id</li>
